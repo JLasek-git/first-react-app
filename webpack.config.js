@@ -17,10 +17,14 @@ const baseConfig = () => ({
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: ['@bable/preset-env', '@bable/preset-react']
+          }
         },
       },
+
     ],
-  }, 
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
