@@ -1,9 +1,8 @@
 import React from 'react';
 import List from '../List/List.js';
-import Hero from '../Hero/Hero.js';
-import Column from '../Column/Column.js';
 import styles from './App.scss';
 import {pageContents, listData} from '../../data/dataStore.js';
+import Icon from '../Column/Icon';
 
 class App extends React.Component {
   render() {
