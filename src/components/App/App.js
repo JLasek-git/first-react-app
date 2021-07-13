@@ -2,9 +2,10 @@ import React from 'react';
 import List from '../List/List.js';
 import styles from './App.scss';
 import {pageContents, listData} from '../../data/dataStore.js';
-import Icon from '../Column/Icon';
+
 
 class App extends React.Component {
+
   render() {
     return (
       <main className={styles.component}>
@@ -12,7 +13,7 @@ class App extends React.Component {
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
         <List {...listData} />
       </main>
-    )
+    );
   }
 }
 
