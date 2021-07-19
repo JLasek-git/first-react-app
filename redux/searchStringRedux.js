@@ -8,6 +8,7 @@ const reducerName = 'search';
 const createActionName = name => `app/${reducerName}/${name}`;
 // actions types
 export const CHANGE = createActionName('CHANGE');
+
 // action creators
 export const createAction_changeSearchString = payload => ({ payload, type: CHANGE });
 // reducer
