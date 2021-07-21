@@ -12,11 +12,24 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  defaultLogoIcon: 'book',
 };
 
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
+};
+
+export const infoPageContents = {
+  title: 'Info',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies nisi bibendum massa consequat, sit amet consequat dui dignissim. Praesent dapibus viverra ex, eget ultricies lacus aliquam nec. Integer sed ante tempus, imperdiet velit vitae, scelerisque magna. Aenean pharetra vulputate nisi nec bibendum.',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+};
+
+export const faqPageContents = {
+  title: 'FAQ',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies nisi bibendum massa consequat, sit amet consequat dui dignissim. Praesent dapibus viverra ex, eget ultricies lacus aliquam nec. Integer sed ante tempus, imperdiet velit vitae, scelerisque magna. Aenean pharetra vulputate nisi nec bibendum.',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
 export const listData = {
@@ -81,6 +94,7 @@ const lists = [
   },
 ];
 
+
 const columns = [
   {
     id: 'column-1',
@@ -140,6 +154,7 @@ const cards = [
     title: 'Skyrim',
   },
 ];
+
 
 const initialStoreData = {
   app: {...pageContents},
