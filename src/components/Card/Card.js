@@ -3,6 +3,7 @@ import styles from './Card.scss';
 import PropTypes from 'prop-types';
 
 
+
 class Card extends React.Component {
   static propTypes = {
     title: PropTypes.node,
@@ -13,7 +14,6 @@ class Card extends React.Component {
       <section className={styles.component}>
         <h5>{title}</h5>
       </section>
-
     );
   }
 }

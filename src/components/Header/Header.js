@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import styles from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Column/Icon';
+import Search from '../Search/SearchContainer';
 import {settings} from '../../data/dataStore';
 
 class Header extends React.Component {
@@ -20,6 +21,7 @@ class Header extends React.Component {
               <NavLink exact to='/faq' activeClassName='active'>FAQ</NavLink>
             </nav>
           </div>
+          <Search />
         </Container>
       </header>
     );
