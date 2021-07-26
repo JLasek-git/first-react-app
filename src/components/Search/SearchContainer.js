@@ -10,7 +10,7 @@ import {
 
 const mapStateToProps = (state) => ({
   searchString: getSearchString(state),
-  countVisible: countVisibleCards(state),
+  countVisible: countVisibleCards(state, window.location.href.split('/')),
   countAll: countAllCards(state),
 });
 
