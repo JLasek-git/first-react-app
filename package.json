@@ -22,6 +22,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-transition": "^2.1.0",
     "redux": "^4.0.1",
+    "redux-persist": "^6.0.0",
     "shortid": "^2.2.16"
   },
   "devDependencies": {
