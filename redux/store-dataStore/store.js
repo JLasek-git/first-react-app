@@ -3,8 +3,6 @@ import {combineReducers, createStore} from 'redux';
 import initialStoreData from '../../src/data/dataStore';
 import ColumnsReducer from '../columnsRedux';
 import CardsReducer from '../cardsRedux';
-import SearchStringReducer from '../searchStringRedux';
-import persistStore from 'redux-persist/es/persistStore';
 
 
 
@@ -15,7 +13,6 @@ const initialState = {
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
   cards: initialStoreData.cards,
-  searchString: '',
 
 };
 
@@ -23,7 +20,6 @@ const initialState = {
 const reducers = {
   columns: ColumnsReducer,
   cards: CardsReducer,
-  searchString: SearchStringReducer,
 };
 
 // add blank reducers for initial state properties without reducers

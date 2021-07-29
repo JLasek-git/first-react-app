@@ -101,7 +101,7 @@ const lists = [
 ];
 
 
-const columns = [
+export const columns = [
   {
     id: 'column-1',
     listId: 'list-1',

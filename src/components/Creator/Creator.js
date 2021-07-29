@@ -42,9 +42,9 @@ class Creator extends React.Component {
       visibleButtons: false,
     });
 
-    const resault = window.confirm('Do you really want to cancel this action?');
+    const result = window.confirm('Do you really want to cancel this action?');
 
-    {if(!resault) this.handleOK();}
+    {if(!result) this.handleOK();}
   }
 
   render() {
