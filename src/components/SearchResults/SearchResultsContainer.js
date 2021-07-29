@@ -1,12 +1,13 @@
 import {connect} from 'react-redux';
 import {
-  getCardsFromUrl,
+  getCardsForSearchResult,
 } from '../../../redux/cardsRedux';
 import SearchResults from './SearchResults';
 
 
-const mapStateToProps = state => ({
-  cards: getCardsFromUrl(state, window.location.href.split('/')),
+const mapStateToProps = (state) => ({
+  cards: getCardsForSearchResult(state, window.location.href.split('/')),
+
 });
 
 
