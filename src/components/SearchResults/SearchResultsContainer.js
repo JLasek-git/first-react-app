@@ -4,9 +4,9 @@ import {
 } from '../../../redux/cardsRedux';
 import SearchResults from './SearchResults';
 
+const mapStateToProps = (state, props) => ({
 
-const mapStateToProps = (state) => ({
-  cards: getCardsForSearchResult(state, window.location.href.split('/')),
+  cards: getCardsForSearchResult(state, props.match.params.title),
 
 });
 

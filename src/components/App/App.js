@@ -26,7 +26,7 @@ const App = () => (
         <Route exact path='/info' component={Info} />
         <Route exact path='/faq' component={FAQ} />
         <Route exact path='/list/:id' component={List} />
-        <Route exact path='/search/:title' component={(props) => <SearchResults {...props} key={window.location.pathname}/>}/>
+        <Route exact path='/search/:title' component={SearchResults}/>
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>
